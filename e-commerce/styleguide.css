@@ -1,0 +1,37 @@
+:root {
+  --h5-medium-font-family: "Roboto-Medium", Helvetica;
+  --h5-medium-font-weight: 500;
+  --h5-medium-font-size: 20px;
+  --h5-medium-letter-spacing: 0px;
+  --h5-medium-line-height: 24px;
+  --h5-medium-font-style: normal;
+  --body-2-regular-font-family: "Roboto-Regular", Helvetica;
+  --body-2-regular-font-weight: 400;
+  --body-2-regular-font-size: 16px;
+  --body-2-regular-letter-spacing: 0px;
+  --body-2-regular-line-height: 24px;
+  --body-2-regular-font-style: normal;
+  --body-2-medium-font-family: "Roboto-Medium", Helvetica;
+  --body-2-medium-font-weight: 500;
+  --body-2-medium-font-size: 16px;
+  --body-2-medium-letter-spacing: 0px;
+  --body-2-medium-line-height: 24px;
+  --body-2-medium-font-style: normal;
+  --body-1-medium-font-family: "Roboto-Medium", Helvetica;
+  --body-1-medium-font-weight: 500;
+  --body-1-medium-font-size: 14px;
+  --body-1-medium-letter-spacing: 0px;
+  --body-1-medium-line-height: 20px;
+  --body-1-medium-font-style: normal;
+  --master-colors-black-gradient-white: rgba(255, 255, 255, 1);
+  --master-colors-black-gradient-grey-1: rgba(79, 79, 79, 1);
+  --master-buttons-secondary-without-icon: initial;
+  --master-colors-black-gradient-grey-2: rgba(130, 130, 130, 1);
+  --master-buttons-primary-without-icon: initial;
+  --master-colors-blue-blue-1: rgba(47, 128, 237, 1);
+  --master-buttons-primary-with-icon: initial;
+  --master-buttons-secondary-with-icon: initial;
+  --master-buttons-tertiary-with-icon: initial;
+  --master-buttons-tertiary-without-icon: initial;
+  --ecommerce-app-colors-secondary: rgba(51, 51, 51, 1);
+}

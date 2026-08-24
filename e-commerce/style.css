@@ -1,0 +1,783 @@
+.portfolio-TC-case {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.portfolio-TC-case .layout {
+  display: flex;
+  flex-direction: column;
+  width: 1328px;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 60px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background: linear-gradient(180deg, rgb(0, 159, 253) 0%, rgb(42, 42, 114) 100%);
+}
+
+.portfolio-TC-case .navigation {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 120px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--master-colors-black-gradient-white);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.portfolio-TC-case .head {
+  display: flex;
+  flex-direction: column;
+  width: 786px;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0px 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--master-colors-black-gradient-white);
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.portfolio-TC-case .subhead {
+  display: flex;
+  flex-direction: column;
+  width: 787px;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-left: -0.5px;
+  margin-right: -0.5px;
+}
+
+.portfolio-TC-case .p {
+  position: relative;
+  width: 788px;
+  margin-top: -1px;
+  margin-left: -0.5px;
+  margin-right: -0.5px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--master-colors-black-gradient-white);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.portfolio-TC-case .tc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .phone {
+  position: relative;
+  width: 639px;
+  height: 495px;
+}
+
+.portfolio-TC-case .overlap {
+  position: relative;
+  height: 495px;
+}
+
+.portfolio-TC-case .phone-left {
+  position: absolute;
+  width: 246px;
+  height: 495px;
+  top: 0;
+  left: 0;
+}
+
+.portfolio-TC-case .overlap-group {
+  position: absolute;
+  width: 240px;
+  height: 495px;
+  top: 0;
+  left: 3px;
+  background-color: #e6e6e6;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 8px #0000004c;
+}
+
+.portfolio-TC-case .rectangle {
+  position: absolute;
+  width: 232px;
+  height: 487px;
+  top: 4px;
+  left: 4px;
+  background-color: #000000;
+  border-radius: 44px;
+}
+
+.portfolio-TC-case .frame {
+  position: absolute;
+  width: 196px;
+  height: 451px;
+  top: 22px;
+  left: 22px;
+  border-radius: 40px;
+  background-image: url(./img/frame-2.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.portfolio-TC-case .rectangle-2 {
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  top: 136px;
+  left: 0;
+  background-color: #cccccc;
+  border-radius: 1px 0px 0px 1px;
+  box-shadow: inset 1px 0px 2px #ffffff;
+}
+
+.portfolio-TC-case .rectangle-3 {
+  position: absolute;
+  width: 3px;
+  height: 62px;
+  top: 198px;
+  left: 0;
+  background-color: #cccccc;
+  border-radius: 1px 0px 0px 1px;
+  box-shadow: inset 1px 0px 2px #ffffff;
+}
+
+.portfolio-TC-case .rectangle-4 {
+  position: absolute;
+  width: 3px;
+  height: 62px;
+  top: 278px;
+  left: 0;
+  background-color: #cccccc;
+  border-radius: 1px 0px 0px 1px;
+  box-shadow: inset 1px 0px 2px #ffffff;
+}
+
+.portfolio-TC-case .rectangle-5 {
+  position: absolute;
+  width: 3px;
+  height: 100px;
+  top: 220px;
+  left: 243px;
+  background-color: #cccccc;
+  border-radius: 0px 1px 1px 0px;
+  box-shadow: inset -1px 0px 2px #ffffff;
+}
+
+.portfolio-TC-case .phone-right {
+  position: absolute;
+  width: 246px;
+  height: 495px;
+  top: 0;
+  left: 393px;
+}
+
+.portfolio-TC-case .frame-2 {
+  position: absolute;
+  width: 196px;
+  height: 451px;
+  top: 22px;
+  left: 22px;
+  border-radius: 40px;
+  background-image: url(./img/frame-1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.portfolio-TC-case .phone-center {
+  position: absolute;
+  width: 245px;
+  height: 495px;
+  top: 0;
+  left: 192px;
+}
+
+.portfolio-TC-case .overlap-2 {
+  position: absolute;
+  width: 239px;
+  height: 495px;
+  top: 0;
+  left: 3px;
+  background-color: #e6e6e6;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 8px #0000004c;
+}
+
+.portfolio-TC-case .rectangle-6 {
+  position: absolute;
+  width: 231px;
+  height: 487px;
+  top: 4px;
+  left: 4px;
+  background-color: #000000;
+  border-radius: 44px;
+}
+
+.portfolio-TC-case .frame-3 {
+  position: absolute;
+  width: 195px;
+  height: 451px;
+  top: 22px;
+  left: 22px;
+  border-radius: 40px;
+  background-image: url(./img/frame.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.portfolio-TC-case .rectangle-7 {
+  position: absolute;
+  width: 3px;
+  height: 100px;
+  top: 220px;
+  left: 242px;
+  background-color: #cccccc;
+  border-radius: 0px 1px 1px 0px;
+  box-shadow: inset -1px 0px 2px #ffffff;
+}
+
+.portfolio-TC-case .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0px 120px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .frame-4 {
+  display: flex;
+  width: 1088px;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .overview {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.portfolio-TC-case .header-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .text-wrapper-3 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--h5-medium-font-family);
+  font-weight: var(--h5-medium-font-weight);
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: var(--h5-medium-font-size);
+  letter-spacing: var(--h5-medium-letter-spacing);
+  line-height: var(--h5-medium-line-height);
+  font-style: var(--h5-medium-font-style);
+}
+
+.portfolio-TC-case .line {
+  position: relative;
+  width: 43px;
+  height: 3px;
+  margin-bottom: -1.5px;
+  margin-left: -1.5px;
+}
+
+.portfolio-TC-case .text-wrapper-4 {
+  position: relative;
+  align-self: stretch;
+  font-family: var(--body-2-regular-font-family);
+  font-weight: var(--body-2-regular-font-weight);
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: var(--body-2-regular-font-size);
+  letter-spacing: var(--body-2-regular-letter-spacing);
+  line-height: var(--body-2-regular-line-height);
+  font-style: var(--body-2-regular-font-style);
+}
+
+.portfolio-TC-case .code {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+.portfolio-TC-case .overview-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .overview-2 {
+  display: flex;
+  flex-direction: column;
+  width: 1088px;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+
+.portfolio-TC-case .process {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 4px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .div-2 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.portfolio-TC-case .span {
+  font-weight: var(--body-2-medium-font-weight);
+  font-family: var(--body-2-medium-font-family);
+  font-style: var(--body-2-medium-font-style);
+  letter-spacing: var(--body-2-medium-letter-spacing);
+  line-height: var(--body-2-medium-line-height);
+  font-size: var(--body-2-medium-font-size);
+}
+
+.portfolio-TC-case .text-wrapper-5 {
+  font-family: var(--body-2-regular-font-family);
+  font-weight: var(--body-2-regular-font-weight);
+  color: #333333;
+  font-size: var(--body-2-regular-font-size);
+  letter-spacing: var(--body-2-regular-letter-spacing);
+  line-height: var(--body-2-regular-line-height);
+  font-style: var(--body-2-regular-font-style);
+}
+
+.portfolio-TC-case .div-3 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.portfolio-TC-case .process-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .process-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 0px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .element {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/ellipse-84-3.svg);
+  background-size: 100% 100%;
+}
+
+.portfolio-TC-case .img {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 12px;
+  left: 12px;
+}
+
+.portfolio-TC-case .line-2 {
+  position: relative;
+  width: 108px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.portfolio-TC-case .icon-idea-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/ellipse-84-2.svg);
+  background-size: 100% 100%;
+}
+
+.portfolio-TC-case .line-3 {
+  position: relative;
+  width: 137.4px;
+  height: 2.41px;
+  object-fit: cover;
+}
+
+.portfolio-TC-case .icon-code-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/ellipse-84-1.svg);
+  background-size: 100% 100%;
+}
+
+.portfolio-TC-case .line-4 {
+  position: relative;
+  width: 133.3px;
+  height: 2.37px;
+  object-fit: cover;
+}
+
+.portfolio-TC-case .icon-itieration-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-image: url(./img/ellipse-84.svg);
+  background-size: 100% 100%;
+}
+
+.portfolio-TC-case .process-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 74px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .text-wrapper-6 {
+  position: relative;
+  width: 126px;
+  margin-top: -1px;
+  font-family: var(--body-1-medium-font-family);
+  font-weight: var(--body-1-medium-font-weight);
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: var(--body-1-medium-font-size);
+  text-align: right;
+  letter-spacing: var(--body-1-medium-letter-spacing);
+  line-height: var(--body-1-medium-line-height);
+  font-style: var(--body-1-medium-font-style);
+}
+
+.portfolio-TC-case .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--body-1-medium-font-family);
+  font-weight: var(--body-1-medium-font-weight);
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: var(--body-1-medium-font-size);
+  letter-spacing: var(--body-1-medium-letter-spacing);
+  line-height: var(--body-1-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--body-1-medium-font-style);
+}
+
+.portfolio-TC-case .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+  padding: 16px 0px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .process-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 4px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  padding: 16px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .frame-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .frame-6 {
+  position: relative;
+  width: 224px;
+  height: 263px;
+  background-image: url(./img/sport-2-1.png);
+  background-size: 100% 100%;
+}
+
+.portfolio-TC-case .view {
+  display: flex;
+  flex-direction: column;
+  width: 432px;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+
+.portfolio-TC-case .text-wrapper-8 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: var(--body-2-medium-font-family);
+  font-weight: var(--body-2-medium-font-weight);
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: var(--body-2-medium-font-size);
+  letter-spacing: var(--body-2-medium-letter-spacing);
+  line-height: var(--body-2-medium-line-height);
+  font-style: var(--body-2-medium-font-style);
+}
+
+.portfolio-TC-case .buttons {
+  display: var(--master-buttons-secondary-without-icon, inline-flex);
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: var(--master-colors-black-gradient-grey-2);
+}
+
+.portfolio-TC-case .secondary-button {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: var(--body-1-medium-font-family);
+  font-weight: var(--body-1-medium-font-weight);
+  color: var(--master-colors-black-gradient-grey-1);
+  font-size: var(--body-1-medium-font-size);
+  letter-spacing: var(--body-1-medium-letter-spacing);
+  line-height: var(--body-1-medium-line-height);
+  white-space: nowrap;
+  font-style: var(--body-1-medium-font-style);
+}
+
+.portfolio-TC-case .icons-interface {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+
+.portfolio-TC-case .frame-7 {
+  display: flex;
+  width: 1088px;
+  align-items: center;
+  gap: 40px;
+  padding: 16px 0px 40px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .OBJECTS {
+  position: relative;
+  width: 161px;
+  height: 164.42px;
+  margin-right: -1px;
+}
+
+.portfolio-TC-case .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 56px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: transparent;
+  background: linear-gradient(180deg, rgb(0, 159, 253) 0%, rgb(42, 42, 114) 100%);
+}
+
+.portfolio-TC-case .contact {
+  align-items: center;
+  gap: 16px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .contact-2 {
+  align-items: flex-start;
+  gap: 40px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .email {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .icons-communication {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.portfolio-TC-case .text-wrapper-9 {
+  position: relative;
+  width: fit-content;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--master-colors-black-gradient-white);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.portfolio-TC-case .icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .img-2 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.portfolio-TC-case .navigation-2 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .text-wrapper-10 {
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  color: var(--master-colors-black-gradient-white);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}

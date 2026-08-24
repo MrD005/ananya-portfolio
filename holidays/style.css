@@ -1,0 +1,746 @@
+.portfolio-TC-case {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 140px;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.portfolio-TC-case .layout {
+  display: flex;
+  flex-direction: column;
+  width: 1328px;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 60px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: transparent;
+  background: linear-gradient(180deg, rgb(0, 159, 253) 0%, rgb(42, 42, 114) 100%);
+}
+
+.portfolio-TC-case .navigation {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 120px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .div {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--master-colors-black-gradient-white);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.portfolio-TC-case .head {
+  display: flex;
+  flex-direction: column;
+  width: 786px;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 0px 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--master-colors-black-gradient-white);
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.portfolio-TC-case .subhead {
+  display: flex;
+  flex-direction: column;
+  width: 787px;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-left: -0.5px;
+  margin-right: -0.5px;
+}
+
+.portfolio-TC-case .p {
+  position: relative;
+  width: 788px;
+  margin-top: -1px;
+  margin-left: -0.5px;
+  margin-right: -0.5px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--master-colors-black-gradient-white);
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.portfolio-TC-case .tc {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .disclaimer-due-to {
+  position: relative;
+  width: 818px;
+  margin-top: -1px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--master-colors-black-gradient-grey-1);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.portfolio-TC-case .span {
+  font-weight: 500;
+}
+
+.portfolio-TC-case .text-wrapper-3 {
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #4f4f4f;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.portfolio-TC-case .tc-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 0px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .head-2 {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .line {
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  height: 1px;
+}
+
+.portfolio-TC-case .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: var(--master-colors-black-gradient-black);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.portfolio-TC-case .element {
+  display: flex;
+  width: 936px;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .laptop {
+  position: relative;
+  width: 293.81px;
+  height: 188px;
+}
+
+.portfolio-TC-case .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.portfolio-TC-case .text-wrapper-5 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--master-colors-black-gradient-black);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.portfolio-TC-case .text-wrapper-6 {
+  font-size: 16px;
+  line-height: 32px;
+  position: relative;
+  align-self: stretch;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--master-colors-black-gradient-black);
+  letter-spacing: 0;
+}
+
+.portfolio-TC-case .solution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .sol {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding: 40px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  margin-right: -2px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--master-colors-black-gradient-black);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.portfolio-TC-case .BACKGROUND {
+  position: relative;
+  width: 221px;
+  height: 186.74px;
+}
+
+.portfolio-TC-case .content-2 {
+  align-items: center;
+  gap: 40px;
+  display: flex;
+  padding: 40px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .text-wrapper-8 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 500;
+  color: var(--master-colors-black-gradient-black);
+  font-size: 20px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.portfolio-TC-case .frame {
+  position: relative;
+  width: 221px;
+  height: 125.21px;
+}
+
+.portfolio-TC-case .content-3 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  display: flex;
+  padding: 40px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .reserach {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 24px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .element-2 {
+  align-items: flex-end;
+  gap: 32px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-TC-case .div-wrapper {
+  flex-direction: column;
+  height: 144px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  flex: 1;
+  flex-grow: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 1px 3px 12px #00000014;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-TC-case .text-wrapper-9 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.portfolio-TC-case .element-3 {
+  flex-direction: column;
+  height: 144px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  flex: 1;
+  flex-grow: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  position: relative;
+}
+
+.portfolio-TC-case .element-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.portfolio-TC-case .text-wrapper-10 {
+  margin-top: -1px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  position: relative;
+  align-self: stretch;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--ecommerce-app-colors-secondary);
+  letter-spacing: 0;
+}
+
+.portfolio-TC-case .text-wrapper-11 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.portfolio-TC-case .wireframes {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .element-5 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+}
+
+.portfolio-TC-case .text {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .text-wrapper-12 {
+  position: relative;
+  width: 936px;
+  margin-top: -1px;
+  margin-right: -516px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.portfolio-TC-case .wireframe {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 778.88px;
+  object-fit: cover;
+}
+
+.portfolio-TC-case .element-6 {
+  display: flex;
+  flex-direction: column;
+  height: 805px;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 1;
+  flex-grow: 1;
+}
+
+.portfolio-TC-case .text-wrapper-13 {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 500;
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.portfolio-TC-case .img {
+  position: relative;
+  width: 452px;
+  height: 773px;
+}
+
+.portfolio-TC-case .text-2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 24px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .div-2 {
+  position: relative;
+  flex: 1;
+  margin-top: -1px;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--ecommerce-app-colors-secondary);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.portfolio-TC-case .text-wrapper-14 {
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: #333333;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.portfolio-TC-case .wireframe-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 12px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .flow {
+  margin-right: -3.76px;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .default {
+  width: 455.77px;
+  height: 260px;
+  position: relative;
+  object-fit: cover;
+}
+
+.portfolio-TC-case .wireframe-3 {
+  position: relative;
+  width: 452px;
+  height: 775px;
+  object-fit: cover;
+}
+
+.portfolio-TC-case .flow-2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  padding: 40px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .wireframe-popup {
+  position: relative;
+  width: 452px;
+  height: 252.4px;
+  object-fit: cover;
+}
+
+.portfolio-TC-case .wireframee-select {
+  position: relative;
+  width: 452px;
+  height: 252.12px;
+}
+
+.portfolio-TC-case .wireframe-4 {
+  position: relative;
+  width: 452px;
+  height: 252.48px;
+  object-fit: cover;
+}
+
+.portfolio-TC-case .design {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 0px 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .designs {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .img-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .default-2 {
+  width: 936px;
+  height: 526px;
+  position: relative;
+  object-fit: cover;
+}
+
+.portfolio-TC-case .quotes-page {
+  position: relative;
+  width: 936px;
+  height: 1434.72px;
+}
+
+.portfolio-TC-case .growth {
+  position: relative;
+  width: 220px;
+  height: 184.68px;
+}
+
+.portfolio-TC-case .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 56px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: transparent;
+  background: linear-gradient(180deg, rgb(0, 159, 253) 0%, rgb(42, 42, 114) 100%);
+}
+
+.portfolio-TC-case .contact {
+  align-items: center;
+  gap: 16px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .contact-2 {
+  align-items: flex-start;
+  gap: 40px;
+  display: inline-flex;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .email {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .icons-communication {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.portfolio-TC-case .text-wrapper-15 {
+  position: relative;
+  width: fit-content;
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  color: var(--master-colors-black-gradient-white);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.portfolio-TC-case .icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 32px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .img-2 {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.portfolio-TC-case .navigation-2 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 60px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.portfolio-TC-case .text-wrapper-16 {
+  font-family: "Roboto", Helvetica;
+  font-weight: 400;
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  color: var(--master-colors-black-gradient-white);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
