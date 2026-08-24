@@ -1,23 +1,8 @@
-const header = document.querySelector('.site-header');
 const menuButton = document.querySelector('.menu-button');
 const mobileMenu = document.querySelector('.mobile-menu');
 const year = document.querySelector('#year');
 
 if (year) year.textContent = new Date().getFullYear();
-
-let headerFrame;
-
-const updateHeader = () => {
-  headerFrame = undefined;
-  header.classList.toggle('scrolled', window.scrollY > 20);
-};
-
-const requestHeaderUpdate = () => {
-  if (headerFrame === undefined) headerFrame = window.requestAnimationFrame(updateHeader);
-};
-
-requestHeaderUpdate();
-window.addEventListener('scroll', requestHeaderUpdate, { passive: true });
 
 const closeMenu = () => {
   menuButton.setAttribute('aria-expanded', 'false');
@@ -103,6 +88,10 @@ const precisePointer = window.matchMedia('(hover: hover) and (pointer: fine)').m
 if (precisePointer && !reducedMotion) {
   document.querySelectorAll('[data-tilt]').forEach((element) => {
     let animationFrame;
+    const isSoft = element.dataset.tilt === 'soft';
+    const horizontalStrength = isSoft ? 3 : 7;
+    const verticalStrength = isSoft ? 2 : 5;
+    const depthSurface = element.closest('.depth-cover');
 
     element.addEventListener('pointermove', (event) => {
       const bounds = element.getBoundingClientRect();
@@ -111,9 +100,15 @@ if (precisePointer && !reducedMotion) {
 
       window.cancelAnimationFrame(animationFrame);
       animationFrame = window.requestAnimationFrame(() => {
-        element.style.setProperty('--tilt-x', `${(-vertical * 5).toFixed(2)}deg`);
-        element.style.setProperty('--tilt-y', `${(horizontal * 7).toFixed(2)}deg`);
+        element.style.setProperty('--tilt-x', `${(-vertical * verticalStrength).toFixed(2)}deg`);
+        element.style.setProperty('--tilt-y', `${(horizontal * horizontalStrength).toFixed(2)}deg`);
         element.classList.add('is-tilting');
+
+        if (depthSurface) {
+          depthSurface.style.setProperty('--shine-x', `${((horizontal + 0.5) * 100).toFixed(1)}%`);
+          depthSurface.style.setProperty('--shine-y', `${((vertical + 0.5) * 100).toFixed(1)}%`);
+          depthSurface.classList.add('depth-active');
+        }
       });
     }, { passive: true });
 
@@ -122,6 +117,12 @@ if (precisePointer && !reducedMotion) {
       element.classList.remove('is-tilting');
       element.style.removeProperty('--tilt-x');
       element.style.removeProperty('--tilt-y');
+
+      if (depthSurface) {
+        depthSurface.classList.remove('depth-active');
+        depthSurface.style.removeProperty('--shine-x');
+        depthSurface.style.removeProperty('--shine-y');
+      }
     });
   });
 }

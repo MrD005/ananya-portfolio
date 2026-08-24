@@ -35,6 +35,20 @@
 .package-camera{position:absolute;z-index:3;width:6px;height:6px;border-radius:50%;background:#08090c;top:-10px;left:50%;transform:translateX(-50%)}
 .case-card:hover .package-laptop{transform:perspective(1000px) rotateX(1deg) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg)) translateY(-8px)}
 [data-tilt]{transform-style:preserve-3d;transition:transform .3s cubic-bezier(.2,.8,.2,1)}[data-tilt].is-tilting{transition-duration:.08s;will-change:transform}
+
+/* Lightweight depth system: layered hero, orbital details and responsive light. */
+.hero-title[data-tilt]{transform:perspective(1200px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg));transform-origin:50% 60%}
+.hero-title[data-tilt]>span{transform-style:preserve-3d}.hero-title[data-tilt]>span:nth-child(2){transform:translateZ(34px)}.hero-title[data-tilt]>span:nth-child(3){transform:translateZ(62px)}.hero-title[data-tilt]>span:nth-child(4){transform:translateZ(16px)}.hero-title[data-tilt]>span:nth-child(5){transform:translateZ(42px)}
+.portrait-orbit{position:absolute;z-index:1;border:1px solid rgba(169,220,255,.55);border-radius:50%;pointer-events:none;transform-style:preserve-3d}.portrait-orbit::after{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--yellow);box-shadow:0 0 22px rgba(255,210,63,.8);top:-5px;left:50%}.orbit-one{inset:50px 22px;animation:orbitOne 14s linear infinite}.orbit-two{inset:76px 48px;border-color:rgba(241,138,197,.52);border-style:dashed;animation:orbitTwo 18s linear infinite reverse}.orbit-two::after{width:8px;height:8px;background:var(--pink);box-shadow:0 0 20px rgba(241,138,197,.7);top:auto;bottom:-4px}
+.depth-chip{position:absolute;z-index:4;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:8px 13px;background:rgba(31,31,37,.82);box-shadow:0 12px 30px rgba(0,0,0,.24);backdrop-filter:blur(8px);font:500 10px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:#fff;pointer-events:none}.depth-chip-one{right:2%;top:15%;transform:translateZ(88px) rotate(5deg);animation:chipFloatOne 4.6s ease-in-out infinite}.depth-chip-two{left:1%;bottom:14%;transform:translateZ(68px) rotate(-6deg);animation:chipFloatTwo 5.2s ease-in-out infinite}
+.depth-cover::after{content:"";position:absolute;z-index:4;inset:0;pointer-events:none;background:radial-gradient(circle at var(--shine-x,50%) var(--shine-y,50%),rgba(255,255,255,.38),rgba(255,255,255,.08) 18%,transparent 42%);mix-blend-mode:soft-light;opacity:0;transition:opacity .25s}.depth-cover.depth-active::after{opacity:1}.view-badge{z-index:5}
+@keyframes orbitOne{from{transform:translateZ(12px) rotateX(68deg) rotateZ(0)}to{transform:translateZ(12px) rotateX(68deg) rotateZ(360deg)}}
+@keyframes orbitTwo{from{transform:translateZ(26px) rotateX(72deg) rotateZ(0)}to{transform:translateZ(26px) rotateX(72deg) rotateZ(360deg)}}
+@keyframes chipFloatOne{0%,100%{transform:translate3d(0,0,88px) rotate(5deg)}50%{transform:translate3d(0,-8px,88px) rotate(2deg)}}
+@keyframes chipFloatTwo{0%,100%{transform:translate3d(0,0,68px) rotate(-6deg)}50%{transform:translate3d(0,7px,68px) rotate(-3deg)}}
+@media(max-width:600px){.depth-chip{padding:6px 10px;font-size:8px}.depth-chip-one{right:0;top:10%}.depth-chip-two{left:0;bottom:10%}.orbit-one{inset:42px 10px}.orbit-two{inset:62px 30px}}
+@media(max-width:360px){.sticker{font-size:21px;padding:6px 16px}.depth-chip-one{right:4%}.orbit-one{inset:48px 18px}.orbit-two{inset:66px 36px}}
+@media(hover:none),(pointer:coarse){.portrait-orbit,.depth-chip{animation:none}}
 @keyframes packageSlide{0%,20%{opacity:1}25%,95%{opacity:0}100%{opacity:1}}
 
 @media(max-width:600px){.package-laptop{width:92%;border-width:8px;border-bottom-width:16px}.package-laptop::after{bottom:-27px;height:12px}}
