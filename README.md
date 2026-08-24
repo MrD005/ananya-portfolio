@@ -4,7 +4,9 @@ A responsive portfolio website presenting Ananya Sharma's product design experie
 
 ## Live website
 
-[mrd005.github.io/ananya-portfolio](https://mrd005.github.io/ananya-portfolio/)
+[ananya-sharma-portfolio.vercel.app](https://ananya-sharma-portfolio.vercel.app/)
+
+GitHub Pages mirror: [mrd005.github.io/ananya-portfolio](https://mrd005.github.io/ananya-portfolio/)
 
 ## Featured work
 
