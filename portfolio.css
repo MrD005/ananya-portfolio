@@ -61,3 +61,10 @@
 /* Balance the portrait backdrop so the blue and pink circles read as equal crescents. */
 .bubble-one{width:270px;height:270px;top:48px}
 @media(max-width:600px){.bubble-one{width:210px;height:210px;top:34px}}
+
+/* Keep recruiter actions visible without competing with the primary contact CTA. */
+.nav-actions{justify-self:end;display:flex;align-items:center;gap:10px}
+.nav-resume{display:inline-flex;align-items:center;gap:8px;padding:10px 15px;border:1px solid rgba(255,255,255,.24);border-radius:999px;color:#fff;font-size:13px;font-weight:700;transition:color .2s,border-color .2s,transform .2s}
+.nav-resume:hover{color:var(--yellow);border-color:var(--yellow);transform:translateY(-2px)}
+@media(max-width:1050px) and (min-width:901px){.site-header{grid-template-columns:auto 1fr auto;column-gap:20px}.nav-links{justify-self:center;gap:24px}.nav-resume{padding-inline:13px}}
+@media(max-width:900px){.nav-actions{display:none}.mobile-menu a.mobile-resume,.mobile-menu a.mobile-contact{width:max-content;padding:10px 16px;border-radius:999px;font-size:16px}.mobile-menu a.mobile-resume{margin-top:20px;background:var(--blue);color:#19191f}.mobile-menu a.mobile-contact{margin-top:0;background:var(--yellow);color:#19191f}}
