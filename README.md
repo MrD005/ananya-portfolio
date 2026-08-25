@@ -10,7 +10,7 @@ GitHub Pages mirror: [mrd005.github.io/ananya-portfolio](https://mrd005.github.i
 
 ## Featured work
 
-- Enterprise product design at ZS — case study placeholder while work remains confidential
+- Agile Workforce at ZS — role-aware workforce planning, allocation and approval case study
 - TravClan Holidays — multi-part holiday quote-building experience
 - TravClan Hotels — hotel discovery, comparison, and booking experience
 - Aryabhata — internal operations workflow platform

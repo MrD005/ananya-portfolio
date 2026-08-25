@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A product design case study for an enterprise workforce planning platform spanning schedules, staffing, proficiency, leave and approvals.">
+  <meta name="theme-color" content="#17171d">
+  <meta property="og:title" content="Agile Workforce — Ananya Sharma">
+  <meta property="og:description" content="Designing a role-aware enterprise system for workforce planning and plant operations.">
+  <meta property="og:type" content="website">
+  <title>Agile Workforce — Ananya Sharma</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../case-study.css?v=20260826-2">
+  <link rel="stylesheet" href="style.css?v=20260826">
+  <script src="../case-study.js" defer></script>
+  <script src="../analytics.js" defer></script>
+</head>
+<body class="zs-case">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+
+  <header class="case-header">
+    <a class="brand" href="../index.html#top" aria-label="Ananya Sharma, portfolio home"><span class="brand-script">Ananya</span><span class="brand-dot"></span></a>
+    <nav class="desktop-nav" aria-label="Case study navigation"><a href="#overview">Overview</a><a href="#system">System</a><a href="#design">Design</a><a href="#outcome">Outcome</a></nav>
+    <a class="back-link" href="../index.html#projects">All projects <span aria-hidden="true">↗</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation"><a href="#overview">Overview</a><a href="#system">System</a><a href="#design">Design</a><a href="#outcome">Outcome</a><a href="../index.html#projects">All projects ↗</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="case-hero grid-bg">
+      <div class="hero-copy reveal">
+        <a class="breadcrumb" href="../index.html#projects"><span aria-hidden="true">←</span> Selected work</a>
+        <p class="kicker">ZS · Enterprise workforce product</p>
+        <h1>One workforce.<br><span>Many decisions.</span></h1>
+        <p class="hero-intro">A role-aware planning system that helps plant teams understand schedules, allocate people, manage proficiency and leave, and move staffing decisions through approval.</p>
+      </div>
+
+      <dl class="project-meta reveal" aria-label="Project details">
+        <div><dt>Role</dt><dd>Product designer</dd></div>
+        <div><dt>Platform</dt><dd>Enterprise web app</dd></div>
+        <div><dt>Users</dt><dd>Staff to administrators</dd></div>
+        <div><dt>Focus</dt><dd>Workforce planning</dd></div>
+      </dl>
+
+      <figure class="hero-visual zs-hero-visual reveal">
+        <div class="product-window" role="img" aria-label="Conceptual workforce dashboard showing staffing alerts, utilization, cross-training and an area schedule">
+          <div class="product-topbar"><span class="product-mark">AW</span><strong>Agile Workforce</strong><span class="product-context">Plant 01 · Morning shift</span><i></i><i></i></div>
+          <div class="product-layout">
+            <div class="product-sidebar" aria-hidden="true"><b></b><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="product-main">
+              <div class="product-heading"><div><small>WEDNESDAY · 25 JUNE</small><h2>Good morning, Jenny</h2><p>3 things need your attention today</p></div><button type="button" tabindex="-1">Ask the agent</button></div>
+              <div class="product-kpis"><article><small>STAFFING</small><strong>3 below</strong><span class="risk">Needs attention</span></article><article><small>CROSS-TRAINING</small><strong>3 overdue</strong><span>Review certifications</span></article><article><small>FLEX STAFFING</small><strong>7 matches</strong><span>Available today</span></article></div>
+              <div class="product-grid"><article class="alert-panel"><div class="panel-title"><strong>Alerts · Today</strong><span>View all</span></div><ul><li><i class="dot red"></i><div><strong>Area 1 is 3 staff short</strong><span>Peak demand predicted for the next four days</span></div><b>Review</b></li><li><i class="dot amber"></i><div><strong>Area 3 has surplus capacity</strong><span>Two people can be redeployed today</span></div><b>Review</b></li><li><i class="dot blue"></i><div><strong>2 staff on approved leave</strong><span>Coverage check recommended</span></div><b>Review</b></li></ul></article><article class="schedule-panel"><div class="panel-title"><strong>Area coverage</strong><span>This week</span></div><div class="coverage-chart"><span style="--h:68%"></span><span style="--h:84%"></span><span style="--h:51%"></span><span style="--h:94%"></span><span style="--h:76%"></span></div><div class="chart-legend"><span><i class="dot blue"></i>Planned</span><span><i class="dot amber"></i>Gap</span></div></article></div>
+            </div>
+          </div>
+        </div>
+        <figcaption>Portfolio-safe reconstruction based on the product’s core information architecture; client data and proprietary details are omitted.</figcaption>
+      </figure>
+
+      <aside class="nda-note reveal"><strong>NDA note</strong><p>This case study describes the problem space, system structure and design decisions. Client data, confidential screens and quantified business outcomes are intentionally excluded.</p></aside>
+    </section>
+
+    <div class="case-body">
+      <aside class="case-index" aria-label="On this page">
+        <p>On this page</p>
+        <a href="#overview">01 · Overview</a>
+        <a href="#system">02 · Roles &amp; system</a>
+        <a href="#approach">03 · Approach</a>
+        <a href="#design">04 · Product design</a>
+        <a href="#outcome">05 · Outcome</a>
+      </aside>
+
+      <div class="case-content">
+        <section class="case-section" id="overview">
+          <div class="section-label reveal"><span>01</span><p>Overview</p></div>
+          <div class="section-lead reveal"><p class="eyebrow">The challenge</p><h2>Staffing a plant is not one decision. It is a chain of connected decisions.</h2></div>
+          <div class="split-copy reveal">
+            <p class="large-copy">Schedules, qualifications, leave, demand and approvals all affect whether the right people reach the right area at the right time.</p>
+            <div><p>The product had to serve multiple levels of the organization without breaking the shared operational picture. A staff member needed a focused personal view; a frontline manager needed control; managers and reviewers needed oversight and traceability.</p><p>The design challenge was to make a dense enterprise system understandable while preserving the detail required for real workforce decisions.</p></div>
+          </div>
+          <div class="decision-callout reveal"><p class="eyebrow">Design question</p><h3>How might we help every role act on the same workforce picture—without giving everyone the same interface?</h3></div>
+
+          <div class="scope-strip reveal" aria-label="Product scope">
+            <span>Current schedule</span><span>Labor model</span><span>Team allocation</span><span>Leave</span><span>Approvals</span><span>Proficiency</span><span>Cross-training</span><span>Administration</span>
+          </div>
+        </section>
+
+        <section class="case-section" id="system">
+          <div class="section-label reveal"><span>02</span><p>Roles &amp; system</p></div>
+          <div class="section-lead reveal"><p class="eyebrow">Five perspectives</p><h2>A shared operating model, shaped around each level of responsibility.</h2></div>
+          <p class="section-summary reveal">Permissions were only one part of the role model. Each persona also needed a different default view, decision scope and level of operational detail.</p>
+
+          <div class="persona-grid">
+            <article class="persona-card staff reveal"><span>01 · Staff</span><h3>Know my work</h3><p>Views the current schedule and personal dashboard, checks assigned work and submits leave requests.</p><small>View · Request</small></article>
+            <article class="persona-card flm reveal"><span>02 · FLM</span><h3>Run the shift</h3><p>Manages staff and teams, edits schedules, builds scenarios and assigns workers to tasks and plant areas.</p><small>Plan · Assign · Manage</small></article>
+            <article class="persona-card fao reveal"><span>03 · FAO</span><h3>Oversee operations</h3><p>Manages frontline managers, reviews dashboards and approves or rejects workforce requests.</p><small>Review · Approve</small></article>
+            <article class="persona-card ab reveal"><span>04 · AB reviewer</span><h3>Add decision context</h3><p>Adds notes and recommendations to FLM decisions so approvals retain the reasoning behind them.</p><small>Comment · Advise</small></article>
+            <article class="persona-card admin reveal"><span>05 · Admin</span><h3>Govern the system</h3><p>Controls access, announcements, email configuration and product-wide administrative settings.</p><small>Configure · Govern</small></article>
+          </div>
+
+          <div class="system-model reveal">
+            <div class="model-heading"><p class="eyebrow">Decision loop</p><h3>From demand signal to an accountable staffing decision.</h3></div>
+            <ol>
+              <li><span>01</span><strong>Sense</strong><p>Review current coverage, leave and demand.</p></li>
+              <li><span>02</span><strong>Plan</strong><p>Model tasks, shifts and staffing scenarios.</p></li>
+              <li><span>03</span><strong>Match</strong><p>Check availability and proficiency.</p></li>
+              <li><span>04</span><strong>Decide</strong><p>Assign, share or redeploy staff.</p></li>
+              <li><span>05</span><strong>Approve</strong><p>Route exceptions with notes and history.</p></li>
+            </ol>
+          </div>
+        </section>
+
+        <section class="case-section" id="approach">
+          <div class="section-label reveal"><span>03</span><p>Approach</p></div>
+          <div class="section-lead reveal"><p class="eyebrow">Designing the operating model</p><h2>Start with decisions and dependencies, then shape the screens.</h2></div>
+          <ol class="process-list">
+            <li class="reveal"><span>01</span><div><h3>Map roles to decisions</h3><p>Clarify who can view, edit, recommend and approve across staff, FLM, FAO, AB and administrator roles.</p></div></li>
+            <li class="reveal"><span>02</span><div><h3>Connect the workforce objects</h3><p>Structure plants, areas, shifts, tasks, teams, proficiency, leave and requests as one connected system.</p></div></li>
+            <li class="reveal"><span>03</span><div><h3>Design for exceptions</h3><p>Surface shortages, surplus capacity, overdue training and approval states where users can act on them.</p></div></li>
+            <li class="reveal"><span>04</span><div><h3>Keep actions traceable</h3><p>Use explicit status, version history, notes and request states so workforce changes remain understandable.</p></div></li>
+          </ol>
+        </section>
+
+        <section class="case-section" id="design">
+          <div class="section-label reveal"><span>04</span><p>Product design</p></div>
+          <div class="section-lead reveal"><p class="eyebrow">The product system</p><h2>Turn workforce data into focused, role-appropriate actions.</h2></div>
+          <p class="section-summary reveal">The final information architecture spans the daily schedule, longer-range planning, staff development and governance. Shared patterns keep the experience coherent as responsibility increases.</p>
+
+          <div class="feature-stack">
+            <article class="feature-row reveal">
+              <div class="feature-copy"><span>01 · See</span><h3>A schedule that explains the day</h3><p>Current Schedule brings shifts, rotations, plant areas, tasks, events and staffing scenarios into a filterable view. Staff can check their work and request leave; managers can inspect team coverage and edit the plan.</p><ul><li>Day, week, month and custom-range views</li><li>Plant, area, shift, rotation and task filters</li><li>Team leave, available balance and schedule history</li></ul></div>
+              <div class="mini-screen schedule-screen" aria-label="Conceptual current schedule interface">
+                <div class="mini-toolbar"><b>Current Schedule</b><span>This week⌄</span></div>
+                <div class="filter-row"><span>Plant 01</span><span>Area: All</span><span>Shift: Morning</span></div>
+                <div class="gantt"><b>Team</b><b>Mon</b><b>Tue</b><b>Wed</b><b>Thu</b><i>Line A</i><span class="bar bar-a">Packing · 4 staff</span><i>Line B</i><span class="bar bar-b">Receiving · 3 staff</span><i>Shared</i><span class="bar bar-c">Available · 2 staff</span></div>
+              </div>
+            </article>
+
+            <article class="feature-row reverse reveal">
+              <div class="feature-copy"><span>02 · Plan</span><h3>Model the work before moving people</h3><p>The Labor Model separates scheduled and non-scheduled work, including CIP and non-CIP tasks. Staffing Scenarios lets FLMs explore a plan before it becomes an operational request.</p><ul><li>Scheduled and non-scheduled task models</li><li>Scenario filters and calendar context</li><li>Edit, discard and request paths</li></ul></div>
+              <div class="mini-screen model-screen" aria-label="Conceptual labor model interface">
+                <div class="mini-toolbar"><b>Labor Model</b><span>Scenario 03</span></div>
+                <div class="model-tabs"><span class="active">Scheduled</span><span>Non-scheduled</span></div>
+                <div class="model-list"><div><i class="status ok"></i><p><b>Line preparation</b><small>CIP · 06:00–08:00</small></p><strong>4 staff</strong></div><div><i class="status warn"></i><p><b>Quality inspection</b><small>Non-CIP · 09:00–11:00</small></p><strong>−1 gap</strong></div><div><i class="status"></i><p><b>Changeover</b><small>Non-scheduled</small></p><strong>2 staff</strong></div></div>
+              </div>
+            </article>
+
+            <article class="feature-row reveal">
+              <div class="feature-copy"><span>03 · Allocate</span><h3>Match people to areas with the right context</h3><p>Team Management makes assigned, unassigned and shared resources visible. Flex Staffing adds proficiency and availability so managers can evaluate a move—not just find an open name.</p><ul><li>Assigned, unassigned and shared-resource states</li><li>Team creation and FLM/FAO views</li><li>Proficiency charts and cross-training assignments</li></ul></div>
+              <div class="mini-screen people-screen" aria-label="Conceptual team allocation interface">
+                <div class="mini-toolbar"><b>Team Management</b><span>6 available</span></div>
+                <div class="person"><i>AS</i><p><b>Aarav S.</b><small>Packing · Advanced</small></p><span class="available">Available</span></div><div class="person"><i>MK</i><p><b>Meera K.</b><small>Receiving · Certified</small></p><span>Assigned</span></div><div class="person"><i>RN</i><p><b>Rohan N.</b><small>Quality · Training due</small></p><span class="warning">Review</span></div><button type="button" tabindex="-1">Assign selected staff →</button>
+              </div>
+            </article>
+
+            <article class="feature-row reverse reveal">
+              <div class="feature-copy"><span>04 · Govern</span><h3>Make approvals clear and auditable</h3><p>My Requests and My Approvals connect current-schedule and labor-model changes to a visible decision path. FAOs can approve or reject; AB reviewers can add the context behind an FLM decision.</p><ul><li>Separate queues for requests and approvals</li><li>Selected-state review with change details</li><li>Comments, status and decision history</li></ul></div>
+              <div class="mini-screen approval-screen" aria-label="Conceptual approval interface">
+                <div class="mini-toolbar"><b>My Approvals</b><span>4 pending</span></div>
+                <div class="request"><div><small>STAFFING SCENARIO · #1428</small><b>Move 2 staff from Area 3 to Area 1</b><p>Requested by Priya M. · FLM</p></div><span>Pending</span></div><blockquote>“Coverage improves without affecting the evening shift.”<small>AB review note</small></blockquote><div class="approval-actions"><button type="button" tabindex="-1">Reject</button><button type="button" tabindex="-1">Approve</button></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="module-heading reveal"><p class="eyebrow">Connected modules</p><h3>The wider product surface</h3></div>
+          <div class="module-grid">
+            <article class="reveal"><span>01</span><h3>Leave management</h3><p>Personal requests, team leave schedule, balances and coverage context.</p></article>
+            <article class="reveal"><span>02</span><h3>Cross-training</h3><p>Certification status, new assignments and overdue training visibility.</p></article>
+            <article class="reveal"><span>03</span><h3>AI dashboard</h3><p>Workforce questions, attention items, recommendations and predicted risks.</p></article>
+            <article class="reveal"><span>04</span><h3>AWF metrics</h3><p>A dedicated view of workforce measures and operational performance.</p></article>
+            <article class="reveal"><span>05</span><h3>Admin controls</h3><p>User access, announcements, email and platform-wide configuration.</p></article>
+            <article class="reveal"><span>06</span><h3>TAP connection</h3><p>A connected workflow for downstream workforce and talent processes.</p></article>
+          </div>
+
+          <div class="ai-callout reveal">
+            <div><p class="eyebrow">AI-assisted, human-owned</p><h3>Bring attention to the decision—not just the data.</h3><p>The AI dashboard surfaces staffing shortages, surplus capacity, upcoming leave and overdue cross-training. Suggestions help users investigate, while review and approval remain explicit human actions.</p></div>
+            <div class="prompt-card"><small>ASK THE AGENT</small><p>What is the biggest staffing risk next week?</p><span>Area 1 is likely to be three people short during peak inbound demand. Two qualified staff are available in Area 3.</span><button type="button" tabindex="-1">Review recommendation →</button></div>
+          </div>
+        </section>
+
+        <section class="case-section learning-section" id="outcome">
+          <div class="section-label reveal"><span>05</span><p>Outcome</p></div>
+          <div class="learning-grid">
+            <div class="section-lead reveal"><p class="eyebrow">What the design enabled</p><h2>A clearer path from workforce signal to accountable action.</h2></div>
+            <div class="learning-copy reveal"><p>The system creates one role-aware structure for the operational work that surrounds a plant schedule: planning tasks, finding qualified people, managing leave, requesting changes and reviewing decisions.</p><p>Because the work is confidential, quantified results are not shared here. The portfolio takeaway is the product architecture: complexity becomes manageable when roles, objects, exceptions and decision rights are designed together.</p></div>
+          </div>
+          <div class="impact-grid reveal">
+            <article><strong>One shared picture</strong><p>Schedules, teams, leave and proficiency stay connected.</p></article><article><strong>Role-aware control</strong><p>Each persona sees the detail and actions their responsibility requires.</p></article><article><strong>Traceable decisions</strong><p>Requests, notes, approval states and history preserve context.</p></article>
+          </div>
+          <div class="takeaway-strip reveal"><span>Design the decisions</span><span>Make exceptions actionable</span><span>Keep context across roles</span><span>Human review stays explicit</span></div>
+        </section>
+      </div>
+    </div>
+
+    <section class="next-case grid-bg">
+      <p class="eyebrow">Next case study</p>
+      <a href="../holidays/index.html"><span>TravClan Holidays</span><strong>Making complex holiday quotes feel simple.</strong><b aria-hidden="true">↗</b></a>
+    </section>
+  </main>
+
+  <footer class="case-footer">
+    <div><a class="brand" href="../index.html#top"><span class="brand-script">Ananya</span><span class="brand-dot"></span></a><p>UI/UX designer creating clear, scalable digital products.</p></div>
+    <a class="footer-cta" href="mailto:annanyasharma7819@gmail.com">Let’s connect <span aria-hidden="true">☺</span></a>
+    <nav aria-label="Social links"><a href="https://www.linkedin.com/in/ananya-sharma-a677ab1b2" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.behance.net/ananyasharmadesigner/" target="_blank" rel="noreferrer">Behance ↗</a><a href="#main">Back to top ↑</a></nav>
+  </footer>
+</body>
+</html>
