@@ -31,6 +31,7 @@
 .package-laptop::after{content:"";position:absolute;left:-8%;right:-8%;bottom:-37px;height:17px;background:linear-gradient(#c5c6ca,#898b91);clip-path:polygon(5% 0,95% 0,100% 72%,58% 100%,42% 100%,0 72%);border-radius:0 0 18px 18px}
 .package-screen{position:absolute;inset:0;background:#fff;overflow:hidden}
 .holiday-cover .package-shot{position:absolute;inset:0;width:100%!important;height:100%;object-fit:cover;object-position:top center;opacity:0;filter:none!important;transform:none!important;animation:packageSlide 16s infinite}
+.holiday-cover .view-badge{background:#19191f;color:var(--yellow);border:1px solid rgba(255,255,255,.38);box-shadow:0 12px 30px rgba(25,25,31,.32)}
 .holiday-cover .shot-one{animation-delay:0s}.holiday-cover .shot-two{animation-delay:4s}.holiday-cover .shot-three{animation-delay:8s}.holiday-cover .shot-four{animation-delay:12s}
 .package-camera{position:absolute;z-index:3;width:6px;height:6px;border-radius:50%;background:#08090c;top:-10px;left:50%;transform:translateX(-50%)}
 .case-card:hover .package-laptop{transform:perspective(1000px) rotateX(1deg) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg)) translateY(-8px)}
