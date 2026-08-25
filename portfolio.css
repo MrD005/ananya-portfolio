@@ -57,3 +57,7 @@
 
 /* Readability: keep inactive project metadata legible without implying availability. */
 .mini-project.unavailable span,.mini-project.unavailable small{color:#9a98a2}
+
+/* Balance the portrait backdrop so the blue and pink circles read as equal crescents. */
+.bubble-one{width:270px;height:270px;top:48px}
+@media(max-width:600px){.bubble-one{width:210px;height:210px;top:34px}}
