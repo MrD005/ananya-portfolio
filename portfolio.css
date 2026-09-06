@@ -59,12 +59,12 @@
 .case-zs .case-cover{height:560px}
 .case-card[hidden],.more-work[hidden]{display:none!important}
 .case-zs .confidential-stamp{left:24px;right:auto;top:24px;width:auto;height:auto;padding:9px 13px;border-radius:999px;background:rgba(23,25,35,.88);transform:none}
-.zs-laptop{width:76%;box-shadow:0 34px 68px rgba(17,10,70,.38)}
+.zs-laptop{width:82%;aspect-ratio:1920/869;box-shadow:0 34px 68px rgba(17,10,70,.38)}
 .zs-screen{background:#05050a}
 .zs-preview{position:absolute;inset:0;width:100%;max-width:none;height:100%;object-fit:contain;object-position:center;opacity:0;animation:zsLandingSlide 15s infinite}
-.zs-preview-one{animation-delay:0s}.zs-preview-two{animation-delay:5s}.zs-preview-three{animation-delay:10s}
+.zs-preview-one{animation-delay:0s}.zs-preview-two{object-fit:cover;object-position:center top;animation-delay:5s}.zs-preview-three{animation-delay:10s}
 @keyframes zsLandingSlide{0%,28%{opacity:1}33%,95%{opacity:0}100%{opacity:1}}
-@media(max-width:900px){.case-zs .case-cover{height:440px}.zs-laptop{width:82%}}
+@media(max-width:900px){.case-zs .case-cover{height:440px}.zs-laptop{width:86%}}
 @media(max-width:600px){.case-zs .case-cover{height:300px}.zs-laptop{width:92%}.case-zs .confidential-stamp{left:14px;top:14px;padding:7px 10px}.case-zs .cover-caption{display:none}}
 @media(prefers-reduced-motion:reduce){.zs-preview{opacity:0!important}.zs-preview:first-child{opacity:1!important}}
 

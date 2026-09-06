@@ -14,8 +14,8 @@
 .zs-case .split-copy .large-copy { font-size: 20px; line-height: 1.55; }
 
 .zs-hero-visual { padding: 24px; border: 1px solid rgba(255,255,255,.14); border-radius: 26px; background: linear-gradient(135deg,#7568ed,#3d51c9); }
-.zs-detail-frame { position: relative; aspect-ratio: 1375/869; overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-radius: 16px; background: #05050a; box-shadow: 0 35px 70px rgba(0,0,0,.24); }
-.zs-detail-frame img { position: absolute; inset: 0; width: 100%; max-width: none; height: 100%; object-fit: cover; object-position: center; }
+.zs-detail-frame { position: relative; aspect-ratio: 1920/869; overflow: hidden; border: 1px solid rgba(255,255,255,.16); border-radius: 16px; background: #05050a; box-shadow: 0 35px 70px rgba(0,0,0,.24); }
+.zs-detail-frame img { position: absolute; inset: 0; width: 100%; max-width: none; height: 100%; object-fit: contain; object-position: center; }
 .people-screen button,.prompt-card button { border: 0; border-radius: 8px; background: #665be6; color: #fff; padding: 10px 14px; font-size: 11px; font-weight: 700; }
 .zs-hero-visual figcaption { margin: 18px 4px 0; color: rgba(255,255,255,.76); text-align: left; }
 
