@@ -83,6 +83,19 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
   document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
 }
 
+// Keep deep-linked sections readable even when the browser jumps past their
+// reveal elements before the intersection observer can register them.
+const revealHashTarget = () => {
+  if (!window.location.hash) return;
+  const target = document.querySelector(window.location.hash);
+  if (!target) return;
+  if (target.classList.contains('reveal')) target.classList.add('is-visible');
+  target.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
+};
+
+window.addEventListener('hashchange', revealHashTarget);
+window.requestAnimationFrame(revealHashTarget);
+
 const precisePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
 if (precisePointer && !reducedMotion) {

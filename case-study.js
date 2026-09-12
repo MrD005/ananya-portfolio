@@ -49,6 +49,19 @@ if (reducedMotion || !('IntersectionObserver' in window)) {
   document.querySelectorAll('.reveal').forEach((element) => revealObserver.observe(element));
 }
 
+// A direct section link can move past reveal elements before the observer sees them.
+// Make the linked section immediately readable for shared links and in-page navigation.
+const revealHashTarget = () => {
+  if (!window.location.hash) return;
+  const target = document.querySelector(window.location.hash);
+  if (!target) return;
+  if (target.classList.contains('reveal')) target.classList.add('is-visible');
+  target.querySelectorAll('.reveal').forEach((element) => element.classList.add('is-visible'));
+};
+
+window.addEventListener('hashchange', revealHashTarget);
+window.requestAnimationFrame(revealHashTarget);
+
 if ('IntersectionObserver' in window) {
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
