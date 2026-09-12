@@ -203,6 +203,18 @@ figure, dl, dd { margin: 0; }
 .case-footer nav { grid-column: 1 / -1; padding-top: 24px; display: flex; gap: 28px; border-top: 1px solid var(--line); color: #96949e; font: 500 10px DM Mono, monospace; letter-spacing: .08em; text-transform: uppercase; }
 .case-footer nav a:hover { color: var(--yellow); }
 
+/* Keep long-form case studies scannable for hiring teams. */
+.case-hero{min-height:auto;padding-top:142px;padding-bottom:82px}
+.hero-copy h1{font-size:clamp(54px,7vw,96px)}
+.project-meta{margin-top:48px}
+.case-section{padding-top:82px;padding-bottom:82px}
+.section-label{margin-bottom:42px}
+.split-copy{margin-top:42px}
+.insight-grid,.process-list,.concept-grid{margin-top:48px}
+.final-designs{margin-top:88px}
+.design-shot{margin-top:52px}
+.next-case{margin-top:72px;margin-bottom:72px}
+
 .lightbox { width: min(96vw, 1440px); max-width: none; height: min(94vh, 1000px); max-height: none; padding: 52px 18px 16px; border: 1px solid rgba(255, 255, 255, .16); border-radius: 22px; background: #111116; color: #fff; box-shadow: 0 30px 100px rgba(0, 0, 0, .7); }
 .lightbox::backdrop { background: rgba(6, 6, 9, .84); backdrop-filter: blur(8px); }
 .lightbox-close { position: absolute; top: 10px; right: 14px; width: 36px; height: 36px; border: 0; border-radius: 50%; background: #2d2d35; font-size: 25px; line-height: 1; cursor: pointer; }
