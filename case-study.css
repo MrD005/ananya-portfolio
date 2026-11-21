@@ -399,3 +399,12 @@ body .case-hero > .nda-note { margin-top: 32px; }
   body .case-hero > .project-meta > div { padding: 0 0 0 20px; border-left: 1px solid var(--line); }
   body .case-hero > .project-meta > div:nth-child(odd) { padding-left: 0; border-left: 0; }
 }
+
+/* ---- Label legibility: mono labels at 13px, image-overlay badges at 12px ---- */
+html body .eyebrow, html body .kicker, html body .breadcrumb, html body .case-hero .project-meta dt, html body .project-meta dt,
+html body .nda-note strong, html body .case-index p, html body .section-label, html body .insight-card > span,
+html body .process-list > li > span, html body .design-shot figcaption > span, html body .step-copy > span,
+html body .takeaway-strip span, html body .next-case a > span, html body .case-footer nav, html body .tldr-label,
+html body .concept-title p span, html body .concept-title strong { font-size: 13px; }
+html body .shot-button > span { font-size: 12px; }
+html body .context-visual span { font-size: 13px; }

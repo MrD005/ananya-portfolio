@@ -157,3 +157,6 @@ body{line-height:1.6}
   .footer-cta{width:100%;justify-content:space-between}
 }
 @media(prefers-reduced-motion:reduce){.case-card[href]:hover{transform:none}.case-card[href]:hover .hotel-cover img,.case-card[href]:hover .holiday-cover>img{transform:none}}
+/* ---- Label legibility: mono labels at 13px, image-overlay badges at 12px ---- */
+html body .eyebrow,html body .more-work>p,html body .mini-projects span,html body .capability-grid article>span,html body .experience-list time,html body .experience-list article>span,html body .footer-bottom,html body .hero-proof li,html body .case-proof dt{font-size:13px}
+html body .confidential-stamp,html body .cover-caption,html body .mini-project .soon-badge{font-size:12px}
