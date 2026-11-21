@@ -356,3 +356,21 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 @media (prefers-reduced-motion: reduce) {
   .reading-progress span { transition: none; }
 }
+
+/* ---- 30-second summary (TL;DR) under the hero meta ---- */
+.tldr { margin: 0 0 40px; padding: 26px 28px 28px; border: 1px solid var(--line); border-radius: 22px; background: rgba(255, 255, 255, .035); }
+.tldr-label { margin: 0 0 18px; display: inline-flex; align-items: center; gap: 10px; color: var(--yellow); font: 500 12px "DM Mono", monospace; letter-spacing: .12em; text-transform: uppercase; }
+.tldr-label::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--pink); }
+.tldr-grid { margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; }
+.tldr-grid > div { padding: 0 24px; border-left: 1px solid var(--line); }
+.tldr-grid > div:first-child { padding-left: 0; border-left: 0; }
+.tldr-grid dt { margin: 0 0 8px; color: var(--ink); font-weight: 700; font-size: 15px; }
+.tldr-grid dd { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.6; }
+.tldr-grid > div:last-child dt { color: var(--yellow); }
+.tldr-grid > div:last-child dd { color: var(--ink); }
+@media (max-width: 800px) {
+  .tldr { padding: 22px 20px; }
+  .tldr-grid { grid-template-columns: 1fr; gap: 18px; }
+  .tldr-grid > div { padding: 18px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .tldr-grid > div:first-child { padding-top: 0; border-top: 0; }
+}
