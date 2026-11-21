@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Readability layer — loaded LAST on every page.
+   Based on unslop's token rules (heydamir/unslop, references/tokens.md):
+   - Interface + reading text in a sans (Inter), display serif ONLY for the hero headline
+   - Sentence-case labels, no wide tracking
+   - Warm ramp; muted text stays ≥ 4.5:1, body text uses primary/secondary
+   ========================================================================== */
+
+:root{
+  /* Warm ramp (unslop "Warm" light) with slightly stronger muted text */
+  --paper:#f7f4ee;
+  --paper-2:#efe9df;
+  --card:#fdfbf7;
+  --ink:#1f1b16;
+  --ink-2:#4f473d;   /* secondary — body copy */
+  --ink-3:#6b6357;   /* muted — meta/captions, ~5:1 on paper */
+  --line:rgba(31,27,22,.10);
+  --line-strong:rgba(31,27,22,.20);
+
+  /* Type: sans everywhere, serif reserved for hero headline */
+  --font-body:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --font-display:var(--font-body);
+  --font-mono:var(--font-body);
+  --font-hero:"Instrument Serif",Georgia,serif;
+
+  --fs-body:17px;
+  --fs-lead:clamp(18px,1.5vw,20px);
+  --fs-h2:clamp(30px,3.4vw,44px);
+  --fs-h3:clamp(19px,1.6vw,22px);
+}
+
+body{font-size:var(--fs-body);line-height:1.7;color:var(--ink);font-feature-settings:"cv11","ss01";font-optical-sizing:auto}
+
+/* Headings: sans, confident weight, tight but legible */
+h2,h3,h4,
+.section-lead,.large-copy,.final-heading,.concept-title,.next-case strong,.next-case h2,.next-case h3{
+  font-family:var(--font-body);
+  font-style:normal;
+  letter-spacing:-.02em;
+}
+h2{font-weight:600;line-height:1.15}
+h3{font-weight:600;line-height:1.3;letter-spacing:-.01em}
+h2 em,h2 span,h3 em,h3 span,.section-lead em,.section-lead span,.large-copy em,.large-copy span{font-style:normal;color:var(--accent-ink)}
+.section-lead{font-weight:600;line-height:1.2}
+.large-copy{font-weight:500;line-height:1.45;letter-spacing:-.01em;color:var(--ink)}
+
+/* Hero headline is the ONLY serif */
+.hero-title,.case-hero h1{
+  font-family:var(--font-hero);
+  font-weight:400;
+  letter-spacing:-.02em;
+  line-height:1.04;
+}
+.hero-title em,.case-hero h1 em,.case-hero h1 span{font-style:italic;color:var(--accent-ink)}
+
+/* Labels: sentence case, normal tracking, readable size and contrast */
+.eyebrow,.kicker,.label,.section-label,.breadcrumb,.case-client,.index-num,
+dt,figcaption,.chip,.case-index a{
+  text-transform:none!important;
+  letter-spacing:0!important;
+  font-family:var(--font-body);
+}
+.eyebrow,.kicker,.label,.section-label{font-size:14px;font-weight:600;color:var(--ink-2)}
+.eyebrow::before,.kicker::before{display:none}
+dt{font-size:13px;font-weight:500;color:var(--ink-3)}
+dd{font-size:15px}
+figcaption{font-size:14px;color:var(--ink-3);line-height:1.5}
+.chip{font-size:13px;font-weight:500}
+.case-index a{font-size:14px}
+
+/* Reading text */
+p,li{color:inherit}
+.case-content p,.case-section p,.lead,.hero-intro{color:var(--ink-2)}
+.case-content p,.case-section p{max-width:68ch}
+.lead,.hero-intro{font-size:var(--fs-lead);line-height:1.6}
+.insight-card p,.concept-card p,.persona-card p,.goal-card p,.process-list p,.process-list li,.feature-copy p,.step-copy p{font-size:16px;line-height:1.6}
+
+/* Logo + mobile menu: no display serif at small/medium sizes */
+.brand{font-family:var(--font-body);font-size:18px;font-weight:600;letter-spacing:-.01em}
+.brand-script{font-style:normal}
+.mobile-menu a{font-family:var(--font-body);font-size:22px;font-weight:600;letter-spacing:-.01em}
+
+/* Buttons */
+.btn,.back-link,.footer-cta{font-family:var(--font-body);letter-spacing:0;text-transform:none}
+
+/* Big figures: sans, tabular */
+.impact-grid strong,.metric-block strong{font-family:var(--font-body);font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+
+@media (max-width:600px){
+  :root{--fs-body:16px}
+  .hero-title{font-size:clamp(38px,11vw,46px)}
+  .case-hero h1{font-size:clamp(34px,9.5vw,44px)}
+}
