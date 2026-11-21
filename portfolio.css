@@ -123,3 +123,37 @@
 
 @media(max-width:900px){.hero-detail{grid-template-columns:1fr}.case-card{grid-template-columns:1fr}.case-cover,.case-zs .case-cover{height:430px;min-height:0}.case-content{padding:28px 14px 20px}}
 @media(max-width:600px){.hero{padding-top:108px}.hero-title{font-size:12.5vw}.hero-detail{margin-top:42px}.portrait-wrap{height:270px}.portrait-wrap img{width:210px;height:210px}.bubble-one,.bubble-two{width:200px;height:200px}.hero-proof{gap:7px}.hero-proof li{font-size:9px}.case-cover,.case-zs .case-cover{height:280px}.case-proof{grid-template-columns:1fr}.case-proof div{padding:9px 0;border-left:0;border-top:1px solid var(--line)}.case-proof div:first-child{border-top:0}.case-content h2{font-size:30px}}
+
+/* Polish pass: type rhythm, readable widths, hover, focus, mobile */
+html{scroll-padding-top:110px}
+body{line-height:1.6}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:4px;border-radius:6px}
+.case-card:focus-visible,.mini-project:focus-visible{outline-offset:3px;border-radius:var(--radius)}
+.intro-copy p{line-height:1.65;max-width:60ch}
+.section-marker p,.capability-heading>p:last-child,.toolkit-copy>p:last-child{line-height:1.65;max-width:56ch}
+.case-content>p:not(.case-client){line-height:1.65;max-width:62ch}
+.case-content h2{line-height:1.12}
+.case-card{transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease}
+.case-card[href]:hover,.case-card[href]:focus-visible{transform:translateY(-4px);box-shadow:0 22px 48px rgba(0,0,0,.28);border-color:rgba(255,255,255,.28)}
+.case-cover img{transition:transform .5s ease}
+.case-card[href]:hover .hotel-cover img{transform:perspective(1000px) rotateX(var(--tilt-x,0deg)) rotateY(var(--tilt-y,0deg)) rotateZ(1deg) scale(1.03)}
+.case-card[href]:hover .holiday-cover>img{transform:scale(1.03)}
+.mini-project.unavailable{opacity:.6}
+.mini-project .soon-badge{justify-self:start;display:inline-block;padding:4px 10px;border:1px dashed rgba(255,255,255,.3);border-radius:999px;font:500 10px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:#b2b0bb}
+.case-tags .tag-muted{background:transparent;border:1px dashed rgba(255,255,255,.35);color:#c5c3cc;font-family:"DM Mono",monospace;font-weight:500;letter-spacing:.06em;text-transform:uppercase}
+.case-card.is-muted,.case-ops{opacity:.7}
+.experience-list article>p,.experience-list div p{line-height:1.55}
+.capability-grid p{line-height:1.65}
+@media(max-width:600px){
+  .projects,.toolkit,.experience{padding-inline:20px}
+  .hero{padding-inline:20px}
+  .footer{padding-inline:20px}
+  .section-marker p,.intro-copy p{max-width:none}
+  .nav-cta,.button,.footer-cta,.mobile-menu a{min-height:44px}
+  .hero-actions .button{width:100%;justify-content:space-between}
+  .case-content{padding:22px 8px 12px}
+  .mini-project{padding:20px 4px}
+  .mini-projects strong{font-size:19px}
+  .footer-cta{width:100%;justify-content:space-between}
+}
+@media(prefers-reduced-motion:reduce){.case-card[href]:hover{transform:none}.case-card[href]:hover .hotel-cover img,.case-card[href]:hover .holiday-cover>img{transform:none}}

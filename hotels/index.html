@@ -15,6 +15,15 @@
   <link rel="stylesheet" href="../case-study.css?v=20260826-2">
   <script src="../case-study.js" defer></script>
   <script src="../analytics.js" defer></script>
+  <style>
+    .hotel-case .case-content img { height: auto; max-width: 100%; }
+    .hotel-case .hotel-designs .shot-button { display: block; }
+    .hotel-case .hotel-designs .design-shot + .design-shot { margin-top: clamp(24px, 4vw, 40px); }
+    .hotel-case .project-meta dd { overflow-wrap: anywhere; }
+    @media (max-width: 600px) {
+      .hotel-case .project-meta { grid-template-columns: 1fr 1fr; gap: 16px 20px; }
+    }
+  </style>
 </head>
 <body class="hotel-case">
   <a class="skip-link" href="#main">Skip to content</a>

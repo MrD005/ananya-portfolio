@@ -78,3 +78,26 @@
   .persona-grid { grid-template-columns: 1fr; }.persona-card:nth-child(n) { grid-column: auto; }.model-heading { grid-template-columns: 1fr; }.model-heading h3 { font-size: 31px; }.system-model { padding: 28px 22px; }.system-model ol { grid-template-columns: 1fr; }.system-model li { display: grid; grid-template-columns: 32px 78px 1fr; gap: 8px; align-items: start; padding: 16px 0; border-top: 1px solid rgba(255,255,255,.1); }.system-model li span,.system-model li strong,.system-model li p { margin: 0; }
   .feature-stack { gap: 76px; }.mini-screen { padding: 12px; overflow: hidden; }.gantt { font-size: 8px; }.module-grid { grid-template-columns: 1fr; }.module-grid article:nth-child(n) { min-height: auto; padding: 25px 0; border-right: 0; }.module-grid h3 { margin-top: 28px; }.ai-callout { padding: 28px 22px; }.impact-grid { grid-template-columns: 1fr; }.impact-grid article,.impact-grid article+article { padding: 20px 0; border-left: 0; border-bottom: 1px solid rgba(27,27,32,.2); }
 }
+
+/* Polish pass: editorial hierarchy, metadata grid, image presentation */
+.zs-case .hero-copy { max-width: 880px; }
+.zs-case .hero-copy h1 { line-height: 1.04; letter-spacing: -.035em; text-wrap: balance; }
+.zs-case .hero-intro { max-width: 640px; margin-top: 24px; font-size: clamp(17px, 1.5vw, 20px); line-height: 1.65; }
+.zs-case .project-meta { margin: 44px 0 0; padding: 22px 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px 32px; border-block: 1px solid rgba(255,255,255,.16); }
+.zs-case .project-meta > div { min-width: 0; }
+.zs-case .project-meta dt { margin: 0 0 6px; font: 500 11px "DM Mono", monospace; letter-spacing: .1em; text-transform: uppercase; }
+.zs-case .project-meta dd { margin: 0; font-size: 15px; line-height: 1.45; }
+.zs-hero-visual { margin-top: 48px; padding: 16px; }
+.zs-detail-frame { border-radius: 14px; }
+.zs-hero-visual figcaption { max-width: 680px; line-height: 1.6; font-size: 13px; }
+.zs-case .nda-note { margin-top: 40px; max-width: 720px; }
+.zs-case .case-section { padding-block: 80px; }
+.zs-case .section-label { margin-bottom: 28px; }
+.zs-case .mini-screen { border-radius: 14px; }
+@media (max-width: 900px) { .zs-case .project-meta { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .zs-case .project-meta { grid-template-columns: 1fr 1fr; gap: 18px 20px; margin-top: 32px; }
+  .zs-hero-visual { margin-top: 32px; padding: 8px; }
+  .zs-case .case-section { padding-block: 52px; }
+  .zs-case .hero-copy h1 { font-size: clamp(34px, 10vw, 44px); }
+}

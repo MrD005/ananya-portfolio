@@ -15,8 +15,19 @@
   <link rel="stylesheet" href="../case-study.css?v=20260826-2">
   <script src="../case-study.js" defer></script>
   <script src="../analytics.js" defer></script>
+  <style>
+    .holidays-case .case-content img { height: auto; max-width: 100%; }
+    .holidays-case .concept-card .shot-button, .holidays-case .design-shot .shot-button { display: block; }
+    .holidays-case .design-shot + .design-pair, .holidays-case .design-pair + .design-shot { margin-top: clamp(24px, 4vw, 40px); }
+    .holidays-case .project-meta dd { overflow-wrap: anywhere; }
+    @media (max-width: 600px) {
+      .holidays-case .project-meta { grid-template-columns: 1fr 1fr; gap: 16px 20px; }
+      .holidays-case .design-pair, .holidays-case .concept-grid { grid-template-columns: 1fr; }
+      .holidays-case .flow-gallery { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
-<body>
+<body class="holidays-case">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="reading-progress" aria-hidden="true"><span></span></div>
 
