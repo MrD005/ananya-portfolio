@@ -374,3 +374,28 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .tldr-grid > div { padding: 18px 0 0; border-left: 0; border-top: 1px solid var(--line); }
   .tldr-grid > div:first-child { padding-top: 0; border-top: 0; }
 }
+
+/* ---- Hero spacing scale: one rhythm for every case study (overrides page CSS) ---- */
+body .case-hero > .hero-copy { margin-bottom: 0; }
+body .case-hero > .project-meta,
+body .case-hero > .tldr,
+body .case-hero > .hero-visual,
+body .case-hero > .revamp-hero-visual,
+body .case-hero > .nda-note { margin-top: 0; margin-bottom: 0; }
+body .case-hero > .project-meta { margin-top: 48px; padding-block: 24px; }
+body .case-hero > .tldr { margin-top: 32px; }
+body .case-hero > .hero-visual,
+body .case-hero > .revamp-hero-visual { margin-top: 56px; }
+body .case-hero > .nda-note { margin-top: 32px; }
+@media (max-width: 600px) {
+  body .case-hero > .project-meta { margin-top: 36px; padding-block: 20px; }
+  body .case-hero > .tldr { margin-top: 24px; }
+  body .case-hero > .hero-visual,
+  body .case-hero > .revamp-hero-visual { margin-top: 40px; }
+  body .case-hero > .nda-note { margin-top: 24px; }
+}
+@media (max-width: 900px) {
+  body .case-hero > .project-meta { grid-template-columns: 1fr 1fr; row-gap: 20px; column-gap: 0; }
+  body .case-hero > .project-meta > div { padding: 0 0 0 20px; border-left: 1px solid var(--line); }
+  body .case-hero > .project-meta > div:nth-child(odd) { padding-left: 0; border-left: 0; }
+}
