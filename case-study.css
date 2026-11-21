@@ -408,3 +408,6 @@ html body .takeaway-strip span, html body .next-case a > span, html body .case-f
 html body .concept-title p span, html body .concept-title strong { font-size: 13px; }
 html body .shot-button > span { font-size: 12px; }
 html body .context-visual span { font-size: 13px; }
+/* Note label column sizes to its label (fixes overlap after 13px labels) */
+html body .nda-note { grid-template-columns: max-content minmax(0, 1fr); }
+@media (max-width: 600px) { html body .nda-note { grid-template-columns: 1fr; } }
